@@ -8,9 +8,21 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+/.pnp
+.pnp.js
+
+# Vite cache
+/node_modules/.vite
+
+# build output
+/dist
+
 dist-ssr
 *.local
+
+# Env
+.env
+.env.*
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +34,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS files
+Thumbs.db
+
+# Test and coverage
+/coverage
+/.nyc_output
+
+# TypeScript cache
+*.tsbuildinfo
+
+# generated lock file not in use (optional)
+package-lock.json
+
+# temporary
+/.vite
+/out
+*.tgz

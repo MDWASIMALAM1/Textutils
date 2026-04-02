@@ -1,16 +1,68 @@
-# React + Vite
+# Textutils (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React text utility app built with Vite. Supports text transformation, theme switch (light/dark), alerts, and a responsive navbar. Intended as a learning project for React fundamentals.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React (JSX)
+- Vite
+- JavaScript (ESNext)
+- CSS modules + global styling
 
-## React Compiler
+## Folder structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/`
+  - `App.jsx` - top-level app container
+  - `main.jsx` - app entry point
+  - `assets/Component/` - custom components (Navbar, Alert, About, Textforms)
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone repo:
+
+   ```bash
+   git clone <your-repo-url>
+   cd Textutils
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the URL shown by Vite (usually `http://localhost:5173`).
+
+## Scripts
+
+- `npm run dev` - start dev server with HMR
+- `npm run build` - production build into `/dist`
+- `npm run preview` - preview production build
+
+## Features
+
+- Convert text to uppercase/lowercase
+- Clear text
+- Copy text to clipboard
+- Remove extra spaces
+- Live summary, word count, char count, reading time
+- Light/Dark theme toggle
+- Alert messages for actions
+
+## Contributing
+
+1. Create a branch: `git checkout -b feature/your-feature`
+2. Commit changes: `git commit -m "feat: ..."`
+3. Push branch and open PR.
+
+## Notes
+
+- Keep `node_modules/` and local env files out of Git via `.gitignore`.
+- Use `npm run lint` if lint config is enabled.
+
