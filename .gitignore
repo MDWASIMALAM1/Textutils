@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+/.pnp
+.pnp.js
+
+# Vite cache
+/node_modules/.vite
+
+# build output
+/dist
+
+dist-ssr
+*.local
+
+# Env
+.env
+.env.*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+Thumbs.db
+
+# Test and coverage
+/coverage
+/.nyc_output
+
+# TypeScript cache
+*.tsbuildinfo
+
+# generated lock file not in use (optional)
+package-lock.json
+
+# temporary
+/.vite
+/out
+*.tgz
